@@ -1,0 +1,62 @@
+Yanfly
+ -- Plugins
+Astfgl66
+ -- Yanfly Battle AI Buff Check
+
+== PROGRAMMING ==
+
+Fallen Angel Olivia
+ -- QoL Plugins
+Kaelan 
+ -- Database integration
+SumRndmDde
+ -- Playtesting plugins
+
+== GRAPHICS ==
+
+Aekashicss
+ -- Animated Battlers
+hiddenone
+Thalzon MV (CONTACT FOR CREDIT)
+whtdragon
+ -- Sprites, Battlers
+Won Yan Shan
+ -- Icons
+
+Copyright 2017 TheGreenKel
+ -- Dragonbones integration
+
+Tsukimi / cji3bp62000 + Sigureya 
+ -- Pixi Filter Controller
+Galenmareth
+ -- Additional Pixi Filter Controller
+
+== AUDIO ==
+
+MUSIC
+YouFulca/WinglessSeraph
+Murray Atkinson
+[Copyright](C) ?Kairi Sawler 
+[Copyright](C) JDB Artist Published by: Degica Co., LTD Resource creators: JDB Artist 
+
+SOUNDS
+Tritus @ Freesound https://freesound.org/people/Tritus/sounds/186899/
+Leoctius @ Freesound https://freesound.org/people/Leoctiurs/sounds/428269/
+<div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
+"Bird Whistling, Single, Robin, A.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org
+Dragonfrog @ Freesound https://freesound.org/people/dragonfrog/
+
+[Copyright](C) REFMAP
+Publisher: Degica, Co. LTD
+
+
+
+
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+IN THE SOFTWARE.

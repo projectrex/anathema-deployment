@@ -1,0 +1,1495 @@
+{
+	"sheets": [
+		{
+			"name": "Items",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "uid"
+				},
+				{
+					"typeStr": "1",
+					"name": "name",
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "description",
+					"display": null
+				},
+				{
+					"typeStr": "14",
+					"name": "icon",
+					"opt": true
+				},
+				{
+					"typeStr": "5:regular,key,hidden-A,hidden-B",
+					"name": "item_type",
+					"display": null
+				},
+				{
+					"typeStr": "5:None,1 Enemy,All Enemies,1 Random Enemy,2 Random Enemies,3 Random Enemies,4 Random Enemies,1 Ally,All Allies,1 Ally (Dead),All Allies (Dead),The User",
+					"name": "scope"
+				},
+				{
+					"typeStr": "2",
+					"name": "consumable",
+					"display": null
+				},
+				{
+					"typeStr": "5:Always,Battle Screen,Menu Screen,Never",
+					"name": "occasion"
+				},
+				{
+					"typeStr": "9:item_price",
+					"name": "price",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "animationId",
+					"opt": true
+				},
+				{
+					"typeStr": "8",
+					"name": "damage",
+					"display": null
+				},
+				{
+					"typeStr": "8",
+					"name": "effects",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "repeats"
+				},
+				{
+					"typeStr": "3",
+					"name": "speed"
+				},
+				{
+					"typeStr": "3",
+					"name": "successRate"
+				},
+				{
+					"typeStr": "3",
+					"name": "tpGain"
+				},
+				{
+					"typeStr": "1",
+					"name": "note",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"uid": "NULL_ITEM",
+					"name": "",
+					"description": "",
+					"item_type": 0,
+					"scope": 0,
+					"consumable": false,
+					"occasion": 0,
+					"price": [
+						0,
+						100
+					],
+					"icon": {
+						"file": "../img/system/IconSet.png",
+						"size": 32,
+						"x": 0,
+						"y": 0
+					},
+					"index": 0,
+					"damage": [
+						{
+							"critical": false,
+							"elementId": 0,
+							"type": 0,
+							"variance": 20
+						}
+					],
+					"animationId": 0,
+					"note": "",
+					"effects": [],
+					"repeats": 1,
+					"speed": 0,
+					"successRate": 100,
+					"tpGain": 0
+				},
+				{
+					"uid": "pot1",
+					"name": "Potion",
+					"description": "",
+					"item_type": 0,
+					"scope": 7,
+					"consumable": true,
+					"occasion": 0,
+					"damage": [],
+					"effects": [
+						{
+							"code": "EFFECT_RECOVER_HP",
+							"dataId": 0,
+							"value1": 0,
+							"value2": 400
+						}
+					],
+					"repeats": 0,
+					"speed": 0,
+					"successRate": 0,
+					"tpGain": 0,
+					"note": "",
+					"index": 1,
+					"icon": {
+						"file": "../img/system/IconSet.png",
+						"size": 32,
+						"x": 0,
+						"y": 11
+					},
+					"animationId": 41,
+					"price": [
+						0,
+						100
+					]
+				}
+			],
+			"separators": [],
+			"props": {
+				"hasIndex": true
+			}
+		},
+		{
+			"name": "Item_Scope",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "desc",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "0",
+					"name": "uid",
+					"display": null
+				}
+			],
+			"lines": [
+				{
+					"index": 0,
+					"uid": ""
+				},
+				{
+					"desc": "1 Enemy",
+					"index": 1,
+					"uid": "scope_1"
+				},
+				{
+					"desc": "All Enemies",
+					"index": 2,
+					"uid": "scope_2"
+				},
+				{
+					"desc": "1 Random Enemy",
+					"index": 3,
+					"uid": "scope_3"
+				},
+				{
+					"desc": "2 Random Enemies",
+					"index": 4,
+					"uid": "scope_4"
+				},
+				{
+					"desc": "3 Random Enemies",
+					"index": 5,
+					"uid": "scope_5"
+				},
+				{
+					"desc": "4 Random Enemies",
+					"index": 6,
+					"uid": "scope_6"
+				},
+				{
+					"desc": "1 Ally",
+					"index": 7,
+					"uid": "scope_7"
+				},
+				{
+					"desc": "All Allies",
+					"index": 8,
+					"uid": "scope_8"
+				},
+				{
+					"desc": "1 Ally (Dead)",
+					"index": 9,
+					"uid": "scope_9"
+				},
+				{
+					"desc": "All Allies (Dead)",
+					"index": 10,
+					"uid": "scope_10"
+				},
+				{
+					"desc": "The User",
+					"index": 11,
+					"uid": "scope_11"
+				}
+			],
+			"separators": [],
+			"props": {
+				"hasIndex": true
+			}
+		},
+		{
+			"name": "Price_Tiers",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "tier"
+				},
+				{
+					"typeStr": "3",
+					"name": "price"
+				}
+			],
+			"lines": [
+				{
+					"tier": "price_t1",
+					"price": 100
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "Items@damage",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "2",
+					"name": "critical",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "elementId"
+				},
+				{
+					"typeStr": "1",
+					"name": "formula",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "5:None,HP Damage,MP Damage,HP Recover,MP Recover,HP Drain,MP Drain",
+					"name": "type",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "variance"
+				}
+			]
+		},
+		{
+			"name": "Items@effects",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "6:Action_Effects",
+					"name": "code",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "dataId"
+				},
+				{
+					"typeStr": "3",
+					"name": "value1"
+				},
+				{
+					"typeStr": "3",
+					"name": "value2"
+				}
+			]
+		},
+		{
+			"name": "Action_Effects",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "uid",
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "val"
+				}
+			],
+			"lines": [
+				{
+					"uid": "EFFECT_RECOVER_HP",
+					"val": 11
+				},
+				{
+					"uid": "EFFECT_RECOVER_MP",
+					"val": 12
+				},
+				{
+					"uid": "EFFECT_GAIN_TP",
+					"val": 13
+				},
+				{
+					"uid": "EFFECT_ADD_STATE",
+					"val": 21
+				},
+				{
+					"uid": "EFFECT_REMOVE_STATE",
+					"val": 22
+				},
+				{
+					"uid": "EFFECT_ADD_BUFF",
+					"val": 31
+				},
+				{
+					"uid": "EFFECT_ADD_DEBUFF",
+					"val": 23
+				},
+				{
+					"uid": "EFFECT_REMOVE_BUFF",
+					"val": 33
+				},
+				{
+					"uid": "EFFECT_REMOVE_DEBUFF",
+					"val": 34
+				},
+				{
+					"uid": "EFFECT_SPECIAL",
+					"val": 41
+				},
+				{
+					"uid": "EFFECT_GROW",
+					"val": 42
+				},
+				{
+					"uid": "EFFECT_LEARN_SKILL",
+					"val": 43
+				},
+				{
+					"uid": "EFFECT_COMMON_EVENT",
+					"val": 44
+				}
+			],
+			"separators": [],
+			"props": {}
+		},
+		{
+			"name": "Quests",
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "name"
+				},
+				{
+					"typeStr": "1",
+					"name": "difficulty",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "5:Main Quests,Side Quests,Character Quests,Tutorial Quests",
+					"name": "type",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "from",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "1",
+					"name": "location"
+				},
+				{
+					"typeStr": "8",
+					"name": "description"
+				},
+				{
+					"typeStr": "8",
+					"name": "objectives"
+				},
+				{
+					"typeStr": "8",
+					"name": "rewards"
+				},
+				{
+					"typeStr": "1",
+					"name": "subtext",
+					"opt": true
+				}
+			],
+			"lines": [
+				{
+					"location": "",
+					"description": [
+						{},
+						{}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": false
+						}
+					],
+					"index": 0,
+					"rewards": [
+						{},
+						{}
+					],
+					"name": "NULL_QUEST"
+				},
+				{
+					"name": "Our Beloved Hometown",
+					"location": "\\map[3]",
+					"description": [
+						{},
+						{
+							"desc": "\\map[3] is under attack. <br>We have to defend our beloved hometown!"
+						},
+						{
+							"desc": "\\map[3] is under attack. <br>We have to defend our beloved hometown! <br><br>There is something mysterious happening in the square..."
+						},
+						{
+							"desc": "\\map[3] was under attack. <br>We defended our beloved hometown! <br><br>After battling with unknown invaders, we have decided  to seek the help of our nation's leadership to find the  help us rebuild and find the source of the attack."
+						}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": true,
+							"objective": "Find the source of the attack on Eloa."
+						}
+					],
+					"rewards": [
+						{},
+						{}
+					],
+					"index": 1,
+					"type": 0
+				},
+				{
+					"index": 2,
+					"name": "\\i[87]_TEMPLATE",
+					"location": "",
+					"description": [
+						{},
+						{}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": false
+						}
+					],
+					"rewards": [
+						{},
+						{}
+					],
+					"type": 0
+				},
+				{
+					"type": 0,
+					"description": [
+						{},
+						{
+							"desc": "We must travel north of Eloa to the capitol of Nova: <br>Cressidia, Namesake of the Old World. <br>We seek the guidance & assistance of \\c[6]King \\n[13]\\c[0] and \\c[6]Queen \\n[14]\\c[0]. <br>Surely, they can assist us in rebuilding Eloa and  finding the source of the attack."
+						}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": true,
+							"objective": "Travel to Cressidia and seek an audience with <br>\\c[6]King \\n[13]\\c[0] and \\c[6]Queen \\n[14]\\c[0]."
+						},
+						{
+							"visible": false,
+							"objective": "Members of The Order of the Ardent, accompanied by Grand Doctor \\n[12], were leaving the castle as we arrived. The Grand Doctor granted us entry to the castle after the NoDD Soldiers denied us."
+						},
+						{
+							"visible": false,
+							"objective": "We were denied audience with the Sovereign by NoDD,  so we must find someone else in the castle to help us."
+						},
+						{
+							"visible": false,
+							"objective": "Professor \\n[10] of the Ardent has agreed to grant us an  audience with the Sovereign if we first assist with  the investigation of \\map[33]."
+						}
+					],
+					"index": 3,
+					"rewards": [
+						{},
+						{}
+					],
+					"name": "\\i[87]Cressidia, Namesake of the Old World",
+					"location": "Nova"
+				},
+				{
+					"location": "Plydwell Forest",
+					"type": 0,
+					"description": [
+						{},
+						{
+							"desc": "The people of \\map[31], west of Cressidia, are  reported to have come down with an inexplicable  illness. Furthermore, the guardians of \\map[33]  have reported unusual activity in the forest. <br>Professor \\n[10] of the Order has promised us  audience with the Sovereign if we are successful.  It's possible that this is also linked to  the attack on Eloa."
+						}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": true,
+							"objective": "Travel to \\map[33] and investigate.  Professor \\n[10] has ensured our entry."
+						},
+						{
+							"visible": false,
+							"objective": "We discovered a broken bridge. We must repair it in order to continue."
+						},
+						{
+							"visible": false,
+							"objective": "We met a fairy, Yxna, who needs our help."
+						},
+						{
+							"visible": false,
+							"objective": "Yxna has agreed to help us repair the bridge. We need to bring her 5x \\ii[801]. (\\qi[801] in hand)"
+						},
+						{
+							"visible": false,
+							"objective": "The forest fairy, Yxna, has helped us repair the broken bridge with \\ii[801]s. She warned us of treachery deep in the forest."
+						},
+						{
+							"visible": false,
+							"objective": "Dzukko, the Forest Guardian, was consumed by the illness."
+						},
+						{
+							"visible": false,
+							"objective": "There are mysterious pillars in the depths of the forest. <br>We've lit \\v[101]."
+						},
+						{
+							"visible": false,
+							"objective": "There's a large mark in the center of the forest eminating a strange energy. Could this be the source of the illness?"
+						},
+						{
+							"visible": false,
+							"objective": "Queen Jorouguma was corrupted and spread her illness throughout the forest. We have defeated her and hope that the forest can begin to heal."
+						}
+					],
+					"index": 4,
+					"rewards": [
+						{},
+						{}
+					],
+					"name": "\\i[87]An Unwell Forest"
+				},
+				{
+					"name": "\\i[87]Reflections of the Lake",
+					"index": 5,
+					"type": 0,
+					"location": "Elchester Crystal Lake",
+					"description": [
+						{},
+						{}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": false
+						}
+					],
+					"rewards": [
+						{},
+						{}
+					]
+				},
+				{
+					"name": "\\i[87]Desert Star",
+					"index": 6,
+					"type": 0,
+					"description": [
+						{},
+						{}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": false
+						}
+					],
+					"rewards": [
+						{},
+						{}
+					],
+					"location": "Silil Wastes, First Settlement"
+				},
+				{
+					"name": "\\i[87]Curious Tremors",
+					"index": 7,
+					"type": 0,
+					"description": [
+						{},
+						{}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": false
+						}
+					],
+					"rewards": [
+						{},
+						{}
+					],
+					"location": "Silil Wastes, Outlands"
+				},
+				{
+					"name": "\\i[87]The Lamenting Nemesis",
+					"index": 8,
+					"type": 0,
+					"description": [
+						{},
+						{}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": false
+						}
+					],
+					"rewards": [
+						{},
+						{}
+					],
+					"location": "Lands of the Nemesis"
+				},
+				{
+					"name": "\\i[87]A Fire in the Heights",
+					"index": 9,
+					"type": 0,
+					"description": [
+						{},
+						{}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": false
+						}
+					],
+					"rewards": [
+						{},
+						{}
+					],
+					"location": "Rosien Mountains"
+				},
+				{
+					"name": "\\i[87]Black Ice",
+					"index": 10,
+					"type": 0,
+					"description": [
+						{},
+						{}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": false
+						}
+					],
+					"rewards": [
+						{},
+						{}
+					],
+					"location": "Blackside Expanse"
+				},
+				{
+					"name": "Eloa1",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 11
+				},
+				{
+					"name": "Eloa2",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 12
+				},
+				{
+					"name": "Eloa3",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 13
+				},
+				{
+					"name": "Eloa4",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 14
+				},
+				{
+					"name": "Eloa5",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 15
+				},
+				{
+					"name": "Cressidia1",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 16
+				},
+				{
+					"name": "Cressidia2",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 17
+				},
+				{
+					"name": "Cressidia3",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 18
+				},
+				{
+					"name": "Cressidia4",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 19
+				},
+				{
+					"name": "Cressidia5",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 20
+				},
+				{
+					"name": "Plydwell1",
+					"location": "Plydwell Forest",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 21
+				},
+				{
+					"name": "Plydwell2",
+					"location": "Plydwell Forest",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 22
+				},
+				{
+					"name": "The Witch's Hitch",
+					"location": "Plydwell Forest",
+					"description": [
+						{},
+						{
+							"desc": "There are mysterious markings in the forest..."
+						}
+					],
+					"objectives": [
+						{
+							"visible": false
+						},
+						{
+							"visible": false,
+							"objective": "We touched a marking along the forest path, which allowed us to enter a mysterious hut. We believe it to belong to the Attendant of the Forest, who appears to be affected by the forest's illness. A glowing ball of energy pleaded for us to find more secret markings in the forest to help the attendant."
+						},
+						{
+							"visible": false,
+							"objective": "We've found \\v[102] markings in the forest."
+						}
+					],
+					"rewards": [
+						{},
+						{}
+					],
+					"index": 23,
+					"type": 1
+				},
+				{
+					"name": "Plydwell4",
+					"location": "Plydwell Forest",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 24
+				},
+				{
+					"name": "Plydwell5",
+					"location": "Plydwell Forest",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 25
+				},
+				{
+					"name": "Elchester1",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 26
+				},
+				{
+					"name": "Elchester2",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 27
+				},
+				{
+					"name": "Elchester3",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 28
+				},
+				{
+					"name": "Elchester4",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 29
+				},
+				{
+					"name": "Elchester5",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 30
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 31
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 32
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 33
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 34
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 35
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 36
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 37
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 38
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 39
+				},
+				{
+					"name": "Silil",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 40
+				},
+				{
+					"name": "Nemesis",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 41
+				},
+				{
+					"name": "Nemesis",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 42
+				},
+				{
+					"name": "Nemesis",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 43
+				},
+				{
+					"name": "Nemesis",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 44
+				},
+				{
+					"name": "Nemesis",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 45
+				},
+				{
+					"name": "Rosien",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 46
+				},
+				{
+					"name": "Rosien",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 47
+				},
+				{
+					"name": "Rosien",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 48
+				},
+				{
+					"name": "Rosien",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 49
+				},
+				{
+					"name": "Rosien",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 50
+				},
+				{
+					"name": "Blackside",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 51
+				},
+				{
+					"name": "Blackside",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 52
+				},
+				{
+					"name": "Blackside",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 53
+				},
+				{
+					"name": "Blackside",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 54
+				},
+				{
+					"name": "Blackside",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 55
+				},
+				{
+					"name": "Nova",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 56
+				},
+				{
+					"name": "Nova",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 57
+				},
+				{
+					"name": "Nova",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 58
+				},
+				{
+					"name": "Nova",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 59
+				},
+				{
+					"name": "Nova",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 60
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 61
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 62
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 63
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 64
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 65
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 66
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 67
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 68
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 69
+				},
+				{
+					"name": "BlankQuest",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 70
+				},
+				{
+					"name": "Adame",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 71
+				},
+				{
+					"name": "Cherise",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 72
+				},
+				{
+					"name": "Malinda",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 73
+				},
+				{
+					"name": "Libou",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 74
+				},
+				{
+					"name": "Arin",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 75
+				},
+				{
+					"name": "Tomas",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 76
+				},
+				{
+					"name": "Oleander",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 77
+				},
+				{
+					"name": "Party",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 78
+				},
+				{
+					"name": "Party",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 79
+				},
+				{
+					"name": "Party",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 80
+				},
+				{
+					"name": "Collection",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 81
+				},
+				{
+					"name": "",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 82
+				},
+				{
+					"name": "",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 83
+				},
+				{
+					"name": "",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 84
+				},
+				{
+					"name": "",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 85
+				},
+				{
+					"name": "",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 86
+				},
+				{
+					"name": "",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 87
+				},
+				{
+					"name": "",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 88
+				},
+				{
+					"name": "",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 89
+				},
+				{
+					"name": "",
+					"location": "",
+					"description": [],
+					"objectives": [],
+					"rewards": [],
+					"index": 90
+				}
+			],
+			"separators": [],
+			"props": {
+				"hasIndex": true
+			}
+		},
+		{
+			"name": "Quests@description",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "desc",
+					"opt": true
+				}
+			]
+		},
+		{
+			"name": "Quests@objectives",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "objective",
+					"opt": true
+				},
+				{
+					"typeStr": "2",
+					"name": "visible"
+				}
+			]
+		},
+		{
+			"name": "Quests@rewards",
+			"props": {
+				"hide": true
+			},
+			"separators": [],
+			"lines": [],
+			"columns": [
+				{
+					"typeStr": "1",
+					"name": "reward",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "2",
+					"name": "visible",
+					"opt": true,
+					"display": null
+				}
+			]
+		}
+	],
+	"customTypes": [
+		{
+			"name": "item_price",
+			"cases": [
+				{
+					"name": "Num",
+					"args": [
+						{
+							"name": "p",
+							"typeStr": "3",
+							"opt": true
+						}
+					]
+				},
+				{
+					"name": "Tier",
+					"args": [
+						{
+							"name": "t",
+							"typeStr": "6:Price_Tiers",
+							"opt": true
+						}
+					]
+				}
+			]
+		}
+	],
+	"compress": false
+}
