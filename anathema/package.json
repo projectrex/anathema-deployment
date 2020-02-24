@@ -1,7 +1,6 @@
 {
     "name": "KADOKAWA/RPGMV",
     "main": "www/index.html",
-	"chromium-args": "--ignore-gpu-blacklist",
     "js-flags": "--expose-gc",
     "window": {
         "title": "",

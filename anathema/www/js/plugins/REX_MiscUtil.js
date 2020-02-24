@@ -2,6 +2,8 @@
 var REX = REX || {};
 REX.MiscUtil = REX.MiscUtil || {};
 
+REX.AnathemaVersion = "0.0.3";
+
 REX.itemGetr = function (text, item, num)
 {
     // Failsafe
@@ -41,7 +43,6 @@ REX.moveFollowerTo = function (follower, x, y) {
     var moveStr = "Move To: " + x + ", " + y;
     $gamePlayer.followers().follower(follower).forceMoveRoute({"list":[{"code":45,"parameters":[moveStr],"indent":null},{"code":0}],"repeat":false,"skippable":false,"wait":false});
 }
-
 
 REX.lerp = function (a, b, t)
 {

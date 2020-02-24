@@ -13,7 +13,7 @@ var REX = REX || {};
 */
 
 /*:
-* @plugindesc Place BELOW REX_MapTransfer.
+* @plugindesc Place BELOW REX_MapTransfer. Gets Map ID of the current reconstruction phase of Eloa.
 *
 * @param Eloa Phases
 * @type struct<PhaseMapIDs>[]

@@ -10,7 +10,9 @@ Fallen Angel Olivia
 Kaelan 
  -- Database integration
 SumRndmDde
- -- Playtesting plugins
+ -- Playtesting assist plugins
+RPG Maker Irina
+ -- Audio Cache Plugin
 
 == GRAPHICS ==
 
@@ -20,8 +22,12 @@ hiddenone
 Thalzon MV (CONTACT FOR CREDIT)
 whtdragon
  -- Sprites, Battlers
+Avery
+ -- Sprites
 Won Yan Shan
  -- Icons
+SkottyTV
+ -- Windowskin
 
 Copyright 2017 TheGreenKel
  -- Dragonbones integration
@@ -30,6 +36,8 @@ Tsukimi / cji3bp62000 + Sigureya
  -- Pixi Filter Controller
 Galenmareth
  -- Additional Pixi Filter Controller
+
+Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0
 
 == AUDIO ==
 
@@ -42,9 +50,9 @@ Murray Atkinson
 SOUNDS
 Tritus @ Freesound https://freesound.org/people/Tritus/sounds/186899/
 Leoctius @ Freesound https://freesound.org/people/Leoctiurs/sounds/428269/
-<div>Icon made from <a href="http://www.onlinewebfonts.com/icon">Icon Fonts</a> is licensed by CC BY 3.0</div>
 "Bird Whistling, Single, Robin, A.wav" by InspectorJ (www.jshaw.co.uk) of Freesound.org
 Dragonfrog @ Freesound https://freesound.org/people/dragonfrog/
+Jason Elrod @ Freesound https://freesound.org/people/JasonElrod/
 
 [Copyright](C) REFMAP
 Publisher: Degica, Co. LTD

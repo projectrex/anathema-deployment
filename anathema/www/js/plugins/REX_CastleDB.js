@@ -8,6 +8,8 @@ DataManager._cdbSheets = [];
     window[obj.dataName] = window[obj.dataName] || null;
     DataManager._cdbSheets.push(obj);
 
+var $dataWaypoints = {};
+
     
 // =============================================================================
 // DataManager
@@ -197,7 +199,7 @@ DataManager.unwrapCdbSheet = function(sheetName, sheetsByName, lines, columns, s
             if (line.description) {
                 for (var i = 1; i < line.description.length; i++) {
                     var desc = line.description[i].desc;
-                    console.log(desc);
+                    //console.log(desc);
                     if (!desc || desc === "") continue;
                     desc = desc.replace(/\\(?!n[^\[])/g, "\\\\");
                     desc = desc.replace(/\"/g, "\\\"");
@@ -214,6 +216,19 @@ DataManager.unwrapCdbSheet = function(sheetName, sheetsByName, lines, columns, s
 
             // Replace the global variable to point at the cdb Quests
             $dataQuests = $cdbQuests;
+        }
+
+        if (sheetName == "Waypoints") {
+            $dataWaypoints = $dataWaypoints || {};
+            var identifier = line.identifier;
+            $dataWaypoints[identifier] = $dataWaypoints[identifier] || {};
+            $dataWaypoints[identifier].index = line.index;
+            $dataWaypoints[identifier].displayName = line.displayName;
+            $dataWaypoints[identifier].mapId = line.mapId;
+            $dataWaypoints[identifier].eventId = line.eventId;
+            $dataWaypoints[identifier].xOffset = line.xOffset;
+            $dataWaypoints[identifier].yOffset = line.yOffset;
+            $dataWaypoints[identifier].followersVisible = line.followersVisible;
         }
     }
 };

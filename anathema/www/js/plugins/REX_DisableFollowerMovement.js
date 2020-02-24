@@ -1,3 +1,16 @@
+/*:
+ * @plugindesc Add plugin command to disable follower movemen.
+ * @author Nicholas J. Duque
+ * 
+ * @help
+ * ==Plugin Commands==
+ * EnableFollowerMovement
+ * DisableFollowerMovement
+ * 
+ * The commands are self-explanatory.
+ * 
+ */
+
 var REX = REX || {};
 REX.DFM = REX.DFM || {};
 REX.DFM.movementEnabled = REX.DFM.movementEnabled || true;

@@ -473,7 +473,7 @@
 							"desc": "\\map[3] is under attack. <br>We have to defend our beloved hometown! <br><br>There is something mysterious happening in the square..."
 						},
 						{
-							"desc": "\\map[3] was under attack. <br>We defended our beloved hometown! <br><br>After battling with unknown invaders, we have decided  to seek the help of our nation's leadership to find the  help us rebuild and find the source of the attack."
+							"desc": "\\map[3] was under attack. <br>We defended our beloved hometown! <br><br>After battling with unknown invaders, we have decided to seek the help of our nation's leadership to help us rebuild and find the source of the attack."
 						}
 					],
 					"objectives": [
@@ -606,23 +606,62 @@
 						{},
 						{}
 					],
-					"name": "\\i[87]An Unwell Forest"
+					"name": "\\i[185]An Unwell Forest"
 				},
 				{
-					"name": "\\i[87]Reflections of the Lake",
+					"name": "\\i[222]Reflections of the Lake",
 					"index": 5,
 					"type": 0,
-					"location": "Elchester Crystal Lake",
+					"location": "Elchester & Crystal Lake",
 					"description": [
 						{},
-						{}
+						{
+							"desc": "Elchester is the subject of many civic expansion projects. Moreover, Crystal Lake has been long-rumored to be the First Birthplace of All Life. Although the Sovereign's request of us to investigate the local construction effoerts may seem frivolous, we may be able to find some answers in this historic locale."
+						}
 					],
 					"objectives": [
 						{
 							"visible": false
 						},
 						{
-							"visible": false
+							"visible": true,
+							"objective": "Travel to Elchester, southwest of Cressidia."
+						},
+						{
+							"visible": false,
+							"objective": "Explore Elchester and Crystal Lake."
+						},
+						{
+							"visible": false,
+							"objective": "We discovered that there's been an accident during construction efforts, so the way to Crystal Lake is closed."
+						},
+						{
+							"visible": false,
+							"objective": "We met Anita and Vincent Lockhart. Their daughter Camillia seems to be out. She enjoys playing near the lake."
+						},
+						{
+							"visible": false,
+							"objective": "After exploring Elchester, we've decided it's best to take a rest at the Inn."
+						},
+						{
+							"visible": false,
+							"objective": "In Elchester, we've discovered that an accident occurred during the construction efforts. We also discovereed that Camillia Lockhart, daughter to Anita and Vincent Lockhart, is missing. We rested at the Inn for a night and had a frightful dream.<br>We must continue to investigate the mysteries of Elchester and the Crystal Lake.<br><br>Camillia Lockhart appeared outside of the Inn and seemed to be acting strange..."
+						},
+						{
+							"visible": false,
+							"objective": "Near the entrance to Crystal Lake, we discovered a strange pattern of water on the ground."
+						},
+						{
+							"visible": false,
+							"objective": "We managed to open a hidden grotto on the Western side of the lake bridge."
+						},
+						{
+							"visible": false,
+							"objective": "After decyphering the code of the lake, we have uncovered the hidden Temple of Crystal Lake."
+						},
+						{
+							"visible": false,
+							"objective": "Camillia appeared at the Crystal Lake and entered the Temple."
 						}
 					],
 					"rewards": [
@@ -1462,6 +1501,145 @@
 					"display": null
 				}
 			]
+		},
+		{
+			"name": "Waypoints",
+			"columns": [
+				{
+					"typeStr": "0",
+					"name": "identifier",
+					"opt": true
+				},
+				{
+					"typeStr": "1",
+					"name": "displayName",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "mapId",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "eventId",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "3",
+					"name": "xOffset",
+					"opt": true
+				},
+				{
+					"typeStr": "3",
+					"name": "yOffset",
+					"opt": true,
+					"display": null
+				},
+				{
+					"typeStr": "2",
+					"name": "followersVisible"
+				}
+			],
+			"lines": [
+				{
+					"mapId": 38,
+					"eventId": 24,
+					"xOffset": 0,
+					"yOffset": 1,
+					"index": 0,
+					"identifier": "Eloa0",
+					"displayName": "Eloa Village",
+					"followersVisible": false
+				},
+				{
+					"mapId": 41,
+					"eventId": 42,
+					"xOffset": 0,
+					"yOffset": 1,
+					"index": 1,
+					"identifier": "Cressidia_Castle",
+					"displayName": "Cressidia Castle",
+					"followersVisible": true
+				},
+				{
+					"mapId": 31,
+					"eventId": 24,
+					"xOffset": 0,
+					"yOffset": 1,
+					"index": 2,
+					"identifier": "Plydwell_Village",
+					"displayName": "Plydwell Village",
+					"followersVisible": true
+				},
+				{
+					"mapId": 34,
+					"eventId": 12,
+					"xOffset": 0,
+					"yOffset": 1,
+					"index": 3,
+					"identifier": "Plydwell_Canopy",
+					"displayName": "Plydwell Forest, Canopy",
+					"followersVisible": true
+				},
+				{
+					"mapId": 36,
+					"eventId": 98,
+					"xOffset": 0,
+					"yOffset": 1,
+					"index": 4,
+					"identifier": "Plydwell_Understory",
+					"displayName": "Plydwell Forest, Understory",
+					"followersVisible": true
+				},
+				{
+					"index": 5,
+					"identifier": "Elchester",
+					"displayName": "Elchester",
+					"mapId": 50,
+					"eventId": 4,
+					"xOffset": 0,
+					"yOffset": 1,
+					"followersVisible": true
+				},
+				{
+					"followersVisible": true,
+					"index": 6,
+					"identifier": "CrystalLake",
+					"displayName": "Crystal Lake",
+					"mapId": 52,
+					"eventId": 42,
+					"xOffset": -1,
+					"yOffset": 0
+				},
+				{
+					"followersVisible": true,
+					"index": 7,
+					"identifier": "ElchesterTemple",
+					"displayName": "Temple of the Crystal Lake, Grand Stairwell",
+					"mapId": 62,
+					"eventId": 5,
+					"xOffset": 0,
+					"yOffset": 1
+				},
+				{
+					"followersVisible": true,
+					"index": 8,
+					"identifier": "ElchesterB2F",
+					"displayName": "Temple of the Crystal Lake, B2F",
+					"mapId": 65,
+					"eventId": 8,
+					"xOffset": 0,
+					"yOffset": 1
+				}
+			],
+			"separators": [],
+			"props": {
+				"hasIndex": true
+			}
 		}
 	],
 	"customTypes": [

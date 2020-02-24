@@ -4736,12 +4736,14 @@ Scene_Menu.prototype.resizeGoldWindow = function() {
     this._goldWindow.refresh();
 };
 
+
+// NJD - MODDED
 Scene_Menu.prototype.repositionWindows = function() {
     this.resizeGoldWindow();
     if (Yanfly.Param.MMMCmdPosition === 'right') {
-      this._commandWindow.x = Graphics.boxWidth - this._commandWindow.width;
+      this._commandWindow.x = Graphics.boxWidth - this._commandWindow.width - 24;
       this._goldWindow.x = Graphics.boxWidth - this._goldWindow.width;
-      this._statusWindow.x = 0;
+      this._statusWindow.x = 96;
     } else if (Yanfly.Param.MMMCmdPosition === 'left') {
       this._commandWindow.x = 0;
       this._goldWindow.x = 0;

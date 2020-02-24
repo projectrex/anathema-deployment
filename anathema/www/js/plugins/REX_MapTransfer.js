@@ -14,3 +14,30 @@ REX.getTransferCoordinates = function() {
 
     return $gameTemp.transferCoordinates;
 }
+
+REX.locateViaEvVar = function() {
+    var ev = $gameMap.event($gameVariables.value(2));
+    var x = ev.x;
+    var y = ev.y;
+
+    // dir is numpad based
+    var dir = $gameVariables.value(6) ? $gameVariables.value(6) : $gamePlayer.direction();
+
+    switch (dir) {
+        case 2: // Down
+            y++; 
+            break;
+        case 4: // Left
+            x--;
+            break;
+        case 6: // Right
+            x++;
+            break;
+        case 8:// Up
+            y--;
+            break;
+    }
+
+    $gamePlayer.locate(x, y);
+    $gamePlayer.setDirection(dir);
+}

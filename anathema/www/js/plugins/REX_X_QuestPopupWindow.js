@@ -2,7 +2,7 @@
 @param name
 @dir audio/se/
 @type file
-@required 1
+@require 1
 
 @param volume
 @type number
